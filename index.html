@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Video comparison</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./main.css">
+  </head>
+  <body>
+
+    <main>
+      <nav>
+        <h1><span class="icon-disc">🥏</span>Form Comparison</h1>
+        <div class="video-controls">
+          <input id="video-scrubber" type="range" value="0" min="0" max="1" step="any">
+          <button id="play-button">
+            <svg id="icon-play" height="34" width="34" viewBox="0 0 30 30">
+              <path d="m27.39,16.05c.93-.58.93-1.53,0-2.11L6.61,1.05c-.93-.58-1.7-.15-1.7.95v26c0,1.1.76,1.53,1.7.95l20.78-12.89Z"/>
+            </svg>
+            <svg id="icon-pause" height="34" width="34" viewBox="0 0 30 30">
+              <rect x="5.5" y="1" width="6" height="28" rx="1" ry="1"/>
+              <rect x="18.5" y="1" width="6" height="28" rx="1" ry="1"/>
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <div id="video-tool">
+        <div class="video-list">
+          <div class="video-container video-drop-zone">
+            <p>Drop video here</p>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+  </body>
+  <script src="./app.js" async defer type="module"></script>
+</html>
+
